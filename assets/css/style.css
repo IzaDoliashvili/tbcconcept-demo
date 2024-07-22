@@ -24,6 +24,7 @@ h5{
 .Main{
  background-color: #f9fafa;
 }
+/* concept-baner */
 .baner{
     padding: 20px 90px;
    
@@ -60,6 +61,7 @@ h5{
     background-image: linear-gradient(15deg, #001682, #3240e5);
     border-radius: 4px;
 }
+/* about-concept */
 .about-concept{
     width: 100%;
     margin-top: 50px;
@@ -76,4 +78,172 @@ h5{
     font-weight: 500;
     line-height: 1.5;
 }
+/* concept-products */
+.concept-products{
+    width: 100%;
+}
+.concept-products-center{
+    width: 90%;
+    margin: auto;
+}
+ 
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.grid-item-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.grid-item-3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.grid-item-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.grid-item-overlay h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.grid-item-overlay a {
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+.grid-item-overlay i{
+    font-size: 18px;
+}
+/* concept-results */
+
+.concept-results{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.stats-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 40px 20px 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align:justify;
+    width: 25%;
+}
+
+.stat-card h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.stat-card p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #777;
+}
+
+/* concept-offer */
+.concept-offer{
+    width: 100%;
+}
+
+.slider-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-item {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.concept-offer-overlay {
+    padding: 20px;
+}
+
+.concept-offer-overlay h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.concept-offer-overlay p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #777;
+}
+/* concept-baner2 */
+.concept-baner-main2{
+    height: 100%;
+    border-radius: 6px;
+    margin: auto;
+    background-image: url("https://static.tbcconcept.ge/desktop/media/nvmgsymp.3xqprivate%20banker.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
