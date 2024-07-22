@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    margin: 0px;
+}
+h5{
+    margin: 0px;
+}
+.concept-baner{
+   width: 90%;
+   height: 360px;
+    margin: auto;
+    
+}
+.Main{
+ background-color: #f9fafa;
+}
+.baner{
+    padding: 20px 90px;
+   
+}
+.concept-baner-main1{
+    height: 100%;
+    border-radius: 6px;
+    margin: auto;
+    background-image: url("../image/baner1-image.PNG"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.concept-bane-info {
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.baner-Icon a{
+    color: white;
+    margin-left: 5px;
+}
+.baner-Icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 10px 15px;
+    background-image: linear-gradient(15deg, #001682, #3240e5);
+    border-radius: 4px;
+}
+.about-concept{
+    width: 100%;
+    margin-top: 50px;
+}
+.about-concept-center{
+    width: 85%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.about-concept-center p{
+    color: #141719;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
