@@ -190,60 +190,337 @@ h5{
 /* concept-offer */
 .concept-offer{
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .slider-container {
     overflow-x: auto;
     white-space: nowrap;
-    padding: 20px;
+    padding: 20px 20px;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color:#007aff #f1f1f1;
+}
+
+.slider-container::-webkit-scrollbar {
+    height: 15px;
 }
 
 .slider {
     display: flex;
     gap: 10px;
+   
+    
+   
 }
 
 .slider-item {
-    display: inline-block;
-    background-color: #ffffff;
-    border-radius: 10px;
+    border: 1px solid #e1e4e5;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    min-width: 40%;
+    flex: 0 0 30%;
     margin-right: 10px;
     position: relative;
+    overflow: hidden;
+    
+}
+.slider-item:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+    img{
+        width: 110%;
+
+    }
+
 }
 
 .slider-item img {
     width: 100%;
     height: 200px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     object-fit: cover;
 }
 
 .concept-offer-overlay {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    row-gap: 15px;
 }
 
 .concept-offer-overlay h2 {
-    margin: 0;
-    font-size: 24px;
+    margin: 10px 0 0;
+    font-size: 18px;
     color: #333;
 }
 
 .concept-offer-overlay p {
-    margin: 10px 0 0;
+    margin: 0;
     font-size: 16px;
     color: #777;
 }
-/* concept-baner2 */
+.slider-container-buttuns{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-container-buttuns div a{
+    color: #141719;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.slider-container-buttuns .arrow-div{
+    display: flex;
+    justify-content: space-evenly;
+    color: #182cc0;
+}
+.slider-container-buttuns .arrow-div i{
+    font-size: 30px;
+}
+.slider-container-buttuns .arrow-div a{
+    color: #182cc0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    width: 100%;
+    text-align: center;
+}
+/* section get-app */
+.get-app{
+    width: 100%;
+    background-color: white;
+}
+.get-app-center{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.get-app-center-left {
+    width: 55%;
+    row-gap: 15px;
+    flex-direction: column;
+    flex: none;
+    align-items: flex-start;
+    display: flex;
+}
+.get-app-center-right img {
+    height: 350px;
+    object-position: 100% 100%;
+    align-self: flex-end;
+   
+}
+.get-app-center-left h2{
+    color: #141719;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.get-app-center-left p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.get-app-buttons {
+    column-gap: 16px;
+    row-gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    display: flex;
+}
+.get-app-buttons a{
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #e1e4e5;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-decoration: none;
+    transition: background-position .25s ease-in-out;
+    display: flex;
+}
+.get-app-buttons a:hover{
+    background-color:#fff;
+}
+.slider-container-h2{
+    color: #141719;
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+/* section concept-baner2 */
 .concept-baner-main2{
-    height: 100%;
+    height: 80%;
     border-radius: 6px;
     margin: auto;
     background-image: url("https://static.tbcconcept.ge/desktop/media/nvmgsymp.3xqprivate%20banker.png"); 
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+/* section awards */
+.awards .slider-item{
+    min-width: 30%;
+    row-gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+    display: flex;
+    background-color: #fff;
+    margin-right: 30px;
+}
+.awards .slider-item img{
+    width: 129px;
+    height: 52px;
+}
+.awards img:hover{
+    width: 129px;
+}
+.awards .concept-offer-overlay{
+    padding: 28px 0px;
+    row-gap: 24px;
+    
+}
+/* footer */
+
+.footer {
+    background-color: white;
+    padding: 20px 0;
+    border-top: 1px solid #e1e4e5;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    row-gap: 24px;
+}
+.footer-column-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-container-center{
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding-bottom: 20px;
+}
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-logo img{
+    width: 165px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 20px;
+    border-top: 1px solid #e1e4e5;
+   
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+.footer-bottom-center{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.social-icons{
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+
+}
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f9fafa;
+    border-radius: 6px;
+    color: #555f62;
+    
+}
+.footer-bottom-rule{
+    display: flex;
+}
+.footer-bottom-rule img{
+    width: 25px;
+}
+.footer-bottom-link{
+    grid-column-gap: 35px;
+    grid-row-gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+}
+.footer-bottom-link span a{
+    font-size: 14px;
+    color: #555f62;
+}
+.footer-bottom-link span a:hover{
+    
+    color:#3240e5;
 }
