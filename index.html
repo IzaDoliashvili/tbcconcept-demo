@@ -14,26 +14,47 @@
     <link rel="stylesheet" href="assets/css/heder.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header-main">
           <div class="logo_container">
               <a href="">
                  <img src="assets/image/logo.PNG" alt="" class="logo" />
               </a>
+              <a href="">
+                <img src="assets/image/logo-mobile.PNG" alt="" class="logo1" />
+             </a>
           </div>
-           <div class="burger_wrapper">
-              <div class="burger_line half start"></div>
-              <div class="burger_line"></div>
-              <div class="burger_line half end"></div>
-          </div>
-  
+          
+          
           <div class="navigation_wrapper">
             <nav>
-              <a href="#" class="nav_link">პროდუქტები</a>
-              <a href="#" class="nav_link">შეთავაზებები</a>
-              <a href="#" class="nav_link">კონცეპტის სივრცე</a>
+                <div class="nav_item">
+                    <a href="#" class="nav_link">პროდუქტები</a>
+                    <div class="dropdown_menu">
+                        <a href="#">პროდუქტების მიმოხილვა</a>
+                        <a href="#">ნაკრები</a>
+                        <a href="#">პირადი ბანკირი</a>
+                    </div>
+                </div>
+                <div class="nav_item">
+                    <a href="#" class="nav_link">შეთავაზებები</a>
+                    <div class="dropdown_menu">
+                        <a href="#">მიმოხილვა</a>
+                        <a href="#">შეთავაზებები</a>
+                        <a href="#"> ღონისიძიებები</a>
+                    </div>
+                </div>
+                <div class="nav_item">
+                    <a href="#" class="nav_link">კონცეპტის სივრცე</a>
+                    <div class="dropdown_menu">
+                        <a href="#">მიმოხილვა</a>
+                        <a href="#">კაფე</a>
+                        <a href="#"> ბიბლიოთეკა</a>
+                        <a href="#"> კონცეპტ ფილიალები</a>
+                    </div>
+                </div>
             </nav>
-          </div>
+        </div>
             <div class="header-details">
                <div class="header-buttons">
                   <div>
@@ -53,9 +74,15 @@
                         
                     </div>
                   </div>
+                  <div class="burger_wrapper">
+                    <div class="burger_line half start"></div>
+                    <div class="burger_line"></div>
+                    <div class="burger_line half end"></div>
+                </div>
 
                </div>
             </div>
+             </div>
         </div>  
     </header>
     <section class="Main">
@@ -190,7 +217,8 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
+
     </section>
     <section class="get-app">
         <div class="get-app-center">
