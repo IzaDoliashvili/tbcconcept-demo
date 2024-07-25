@@ -1,7 +1,11 @@
+@font-face {
+    font-family: "tbcfont";
+    src: url(../font/TBCContractica-Regular.ttf);
+  }
 body{
     margin: 0px;
     box-sizing: border-box;
-    
+    font-family: "tbcfont";
 }
 a{
     text-decoration: none;
@@ -65,6 +69,7 @@ h5{
 .about-concept{
     width: 100%;
     margin-top: 50px;
+    
 }
 .about-concept-center{
     width: 85%;
@@ -452,6 +457,7 @@ h5{
     color: #333;
     text-decoration: none;
     font-size: 14px;
+    margin-left: 10px;
 }
 
 .contact-info {
@@ -555,6 +561,7 @@ h5{
         width: 90%;
         border-radius: 8px;
         box-shadow: none;
+        padding: 40px 10px 40px 20px;
     }
     .slider-container-buttuns{
         width: 95%;
@@ -638,8 +645,53 @@ h5{
         font-size: 14px;
     }
     .slider-container-h2 {
-        margin-left: 0px;
-    }    
+        margin-left: 5px;
+    } 
+    .footer-container-center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column h3 {
+        cursor: pointer;
+        position: relative;
+        font-size: 24px;
+    }
+
+    .footer-column ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-column.active ul {
+        display: flex;
+        flex-direction: column;
+        row-gap:  24px;
+        padding: 10px 45px 30px 5px;
+        
+    }
+    .footer-column ul li a{
+        font-size: 16px;
+    }
+    .drop{
+        border-bottom: 1px solid #d1d5d6;
+        padding: 0px 10px 32px 10px;
+    }   
+    #footer-column4 ul{
+        display: block;
+
+    }
+    .social-icons {
+        padding: 20px 0px;
+    }
+    .footer-bottom-center{
+        flex-direction: column-reverse;
+        row-gap: 10px;
+        width: 100%;
+        margin: 0px;
+    }
 
 
 }

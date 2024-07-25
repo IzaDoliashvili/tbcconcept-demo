@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'mrgvlovani';
-    src: url(../font/bpg_mrgvlovani_caps_2010.ttf);
-  }
+  font-family: "tbcfont";
+  src: url(../font/TBCContractica-Regular.ttf);
+}
   header {
       width: 100%;
       height: 80px;
@@ -10,7 +10,7 @@
       align-items: center;
       justify-content: space-between;
       transition: all 500ms ease-out;
-      font-family: 'mrgvlovani';
+      font-family: "tbcfont";
     }
     header.active {
       background-color: #a6aeae;
@@ -341,7 +341,7 @@
     }
     @media (max-width: 550px){
       .header-buttons div a {
-        font-size: 16px;
+        font-size: 14px;
       }
       .header-buttons{
         justify-content: space-between;
