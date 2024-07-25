@@ -326,6 +326,9 @@ h5{
     font-weight: 400;
     line-height: 1.7;
 }
+.get-app-buttons-hiden{
+    display: none;
+}
 .get-app-buttons {
     column-gap: 16px;
     row-gap: 16px;
@@ -524,3 +527,159 @@ h5{
 }
 
 /* responsive */
+
+@media (max-width: 995px) {
+    .baner{
+        padding: 40px 50px;
+    }
+    .concept-bane-info{
+        max-width: 450px;
+        min-height: 360px;
+        margin: 0px;
+    }
+    .baner-Icon {
+        width: 30%;
+    }
+    .about-concept-center p {
+        font-size: 32px;
+    }
+    .concept-results {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .stats-container{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .stat-card{
+        width: 90%;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+    .slider-container-buttuns{
+        width: 95%;
+        margin: auto;
+    }
+    .get-app-buttons{
+        display: none;
+    }
+    .get-app-buttons-hiden{
+        display: flex;
+        background-color: #f9fafa;
+    grid-column-gap: 4px;
+    color: #182cc0;
+    text-transform: uppercase;
+    border: 1px solid #182cc0;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-decoration: none;
+    }
+}
+
+@media (max-width: 775px){
+    .concept-baner{
+        width: 100%;
+    }
+    .concept-bane-info{
+        min-height: 100%;
+        display: flex;
+        flex: 1;
+        max-width: 100%;
+        align-items: stretch;
+    } 
+    .baner-Icon {
+        width: 95%;
+    }
+    .about-concept-center p {
+        font-size: 28px;
+    }
+    .grid-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .grid-item {
+        min-width: calc(100% - 250px);
+        scroll-snap-align: start;
+    }
+    .slider-item{
+        flex: 0 0 60%;
+    }
+    .slider-container-buttuns div a{
+        font-size: 14px;
+    }
+    .get-app-center{
+        flex-direction: column-reverse;
+    }
+    .get-app-center-left{
+        width: 100%;
+        align-items: center;
+    }
+    .get-app-buttons-hiden{
+        width:90% ;
+        
+    }
+    .get-app-center-right{
+        width: 100%;
+        display: flex;
+    }
+    .concept-offer-overlay p{
+        font-size: 14px;
+    }
+    .slider-container-h2 {
+        margin-left: 0px;
+    }    
+
+
+}
+@media (max-width: 550px){
+    .concept-bane-info{
+        font-size: 14px;
+    }
+    .about-concept-center p {
+        font-size: 24px;
+    }
+    .grid-item {
+        min-width: calc(100% - 50px);
+        scroll-snap-align: start;
+    }
+    .slider-item{
+        flex: 0 0 80%;
+    }
+    .slider-container-buttuns div a,
+    .slider-container-buttuns .arrow-div a{
+        font-size: 12px;
+    }
+    .slider-container-buttuns .arrow-div i{
+        font-size: 20px;
+    }
+    .get-app-center-right{
+        justify-content: center;
+    }
+    .get-app-center-left{
+        width: 90%;
+        align-items: center;
+    }
+    .concept-offer-overlay{
+        padding: 20px;
+        overflow: hidden;
+    }
+    .concept-offer-overlay p{
+        font-size: 12px;
+    }
+    .concept-offer-overlay h2 {
+       font-size: 14px;
+    }
+
+}
