@@ -20,5 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
             navItems.forEach(item => item.classList.remove('active'));
         }
     });
+    
+    const toggleButton = document.getElementById('toggle-button');
+    const whiteButtons = document.querySelectorAll('.white-button');
+
+    toggleButton.addEventListener('click', function () {
+        whiteButtons.forEach(button => {
+            button.classList.toggle('show');
+        });
+    });
 });
 
